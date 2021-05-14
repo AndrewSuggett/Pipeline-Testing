@@ -7,11 +7,5 @@ pipeline {
       }
     }
 
-    stage('Testing') {
-      steps {
-        bat(script: 'RunScript', returnStdout: true)
-      }
-    }
-
   }
 }
