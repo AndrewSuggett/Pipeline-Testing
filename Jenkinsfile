@@ -9,7 +9,7 @@ pipeline {
 
     stage('Testing') {
       steps {
-        bat(script: 'RunScipt.bat', returnStatus: true)
+        bat(script: 'RunScript.bat', returnStatus: true, returnStdout: true)
       }
     }
 
