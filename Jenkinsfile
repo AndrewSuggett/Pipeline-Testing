@@ -10,6 +10,7 @@ pipeline {
     stage('Testing') {
       steps {
         bat(script: 'RunScript.bat', returnStatus: true, returnStdout: true)
+        bat 'python --version'
       }
     }
 
